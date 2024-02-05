@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+const helmet = require('helmet')
 
 const { logger } = require('./config/logger-config')
 
@@ -10,6 +11,8 @@ const ipWhitelist = require('./middlewares/ip-whitelisting')
 const apiRoutes = require('./routes')
 
 const app = express()
+
+app.use(helmet())
 
 app.use(
     cors({
