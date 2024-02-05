@@ -12,6 +12,7 @@ const apiRoutes = require('./routes')
 
 const app = express()
 
+// Helps with HTTP security headers
 app.use(helmet())
 
 app.use(
@@ -19,6 +20,9 @@ app.use(
         origin: ['http://127.0.0.1', 'http://localhost'],
     })
 )
+
+// IP Whitelisting middleware
+app.use(ipWhitelist)
 
 // Middleware to log all requests
 app.use((req, res, next) => {
@@ -39,6 +43,9 @@ app.use((req, res, next) => {
 
     next()
 })
+
+// Rate limiter middleware
+app.use(rateLimiter)
 
 // Routes
 app.use('/api', apiRoutes)
