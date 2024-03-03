@@ -8,7 +8,7 @@ What is this PoC about?
 
 -   Additional security measures and best practices are implemented to ensure that only authorized users can access the middleware endpoint/s, using the following:
 
-> **_NOTE:_** The is in no way a comprehensive list of security measures, but a starting point towards a more secure implementation of a DHIS2 Middleware for public portals.
+> **_NOTE:_** Thi is in no way a comprehensive list of security measures, but a starting point towards a more secure implementation of a DHIS2 Middleware for public portals.
 
     -   API Key Authorization
     -   IP Whitelisting
