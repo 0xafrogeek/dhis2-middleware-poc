@@ -53,4 +53,4 @@ cp example.env .env
 npm run dev
 ```
 
-6. Once middleware is up and running, any unauthorized request to the /indicator endpoint will be rejected with a 401 Unauthorized response. Only requests with a valid API Key will be allowed.
+6. Once middleware is up and running, any unauthorized request to the /indicators endpoint will be rejected with a 401 Unauthorized response. Only requests with a valid API Key will be allowed.
