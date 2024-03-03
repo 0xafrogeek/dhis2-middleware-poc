@@ -4,6 +4,7 @@ const apicache = require('apicache')
 const apiKeyAuth = require('../../middlewares/api-key-auth')
 const indicators = require('../../controllers/indicators-controller')
 
+// caching middleware
 const cache = apicache.middleware
 
 const router = express.Router()

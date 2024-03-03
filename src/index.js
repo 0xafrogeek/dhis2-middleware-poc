@@ -3,12 +3,11 @@ const cors = require('cors')
 const helmet = require('helmet')
 
 const { logger } = require('./config/logger-config')
+const apiRoutes = require('./routes')
 
 const errorHandler = require('./middlewares/error-handler')
 const rateLimiter = require('./middlewares/rate-limiting')
 const ipWhitelist = require('./middlewares/ip-whitelisting')
-
-const apiRoutes = require('./routes')
 
 const app = express()
 
