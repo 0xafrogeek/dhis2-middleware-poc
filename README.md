@@ -2,8 +2,6 @@
 
 -   Proof-of-concept for a more secure implementation of a DHIS2 Midddleware for Public Portals
 
-# DHIS2 Public Portal PoC
-
 What is this PoC about?
 
 -   A minimal working PoC for a more secure DHIS2 Middleware for public data visualization portals.
@@ -54,3 +52,5 @@ cp example.env .env
 ```bash
 npm run dev
 ```
+
+6. Once middleware is up and running, any unauthorized request to the /indicator endpoint will be rejected with a 401 Unauthorized response. Only requests with a valid API Key will be allowed.
